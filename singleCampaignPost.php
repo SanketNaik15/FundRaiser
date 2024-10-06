@@ -122,7 +122,7 @@ function convertToLocalhostURL($localPath) {
             <tr>
                 <td><strong>Campaign organizer</strong></td>
                 <td>:</td>
-                <td><?php echo $campaignCreatorFullname;?></td>
+                <td><?php echo isset($campaignCreatorFullname) ? $campaignCreatorFullname : 'N/A';?></td>
             </tr>
             <tr>
                 <td><strong>Phone(Campaign Specific)</strong></td>
@@ -132,7 +132,7 @@ function convertToLocalhostURL($localPath) {
             <tr>
                 <td><strong>Phone(Organizer's)</strong></td>
                 <td>:</td>
-                <td><?php echo $organizerPhone;?></td>
+                <td><?php echo isset($organiserPhone) ? $organiserPhone : 'N/A';?></td>
             </tr>
 
 	        <tr>
